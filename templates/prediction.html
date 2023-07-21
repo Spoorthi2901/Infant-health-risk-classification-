@@ -1,0 +1,44 @@
+<!-- Importing the base.html -->
+{%extends "base.html"%} {% block body %}
+<!-- Creating a card  -->
+<div class="container">
+    <div class="d-flex  flex-wrap justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h3>Prediction</h3>
+                </div>
+            </div>
+            <div class="card-body">
+                <form onsubmit="location.href='/'; return false;">
+                    <h5 for="bmi">BMI : {{data.BMI}}</h5>
+                    <br>
+
+                    <h5 for="oximetery">Oximetery : {{data.oximetery}}</h5>
+                    <br>
+
+                    <h5 for="heartbeat">Heartbeat : {{data.heartbeat}}</h5>
+                    <br>
+
+                    <h5 for="humidity">Humidity : {{data.humidity}}</h5>
+                    <br>
+
+                    <h5 for="temp"><b>Temperature : {{data.temp}}</b></h5>
+                    <br>
+
+                    <h5 for="sleeppattern"><b>Sleep pattern : {{data.sleeppattern}}</b></h5>
+                    <br>
+
+                    <h4 for="prediction"><b>Prediction : {{prediction}}</b></h4>
+                    <br>
+
+                    <div class="form-group">
+                        <button value="Predict" class="btn btn-dark">Return</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+{%endblock%}

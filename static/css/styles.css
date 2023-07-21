@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+html,
+body {
+    background-color: #0D0D0D;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar :hover {
+    color: black;
+}
+
+.card {
+    margin-top: 1rem;
+    min-width: 450px;
+}
+
+/* Hiding the input number spinners */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        font-size: 0.8rem;
+    }
+}
