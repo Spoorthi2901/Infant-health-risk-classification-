@@ -3,7 +3,6 @@ from flask import Flask ,render_template,request
 from joblib import load
 import pandas as pd
 app = Flask(__name__)
-app.secret_key="."
 
 # Loading the model using joblib
 model=load(open('./static/InfantHealthRiskModel.joblib', 'rb'))
@@ -30,5 +29,5 @@ def index():
     return render_template("index.html")
 
 
-if __name__=="__main__":
-    app.run(threaded=True,port=5000) 
+# if __name__=="__main__":
+#     app.run(threaded=True,port=5000) 
