@@ -21,9 +21,9 @@ def index():
         print('Transformed data: ', data)
         df = pd.DataFrame(data=data)
         y_label=model.predict(df)
-        print('Prediction: ',y_label)
         prediction=y_label[0]
-
+        #Print the prediction
+        print('Prediction: ',prediction)
         cleanData = dict(map(lambda item: (item[0],float(item[1][0])),data.items()))
         return render_template("prediction.html", data=cleanData, prediction=Risk[prediction])
     return render_template("index.html")
