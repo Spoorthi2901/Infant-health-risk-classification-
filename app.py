@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Loading the model using joblib
-model=load(open('./static/InfantHealthRiskModel.joblib', 'rb'))
+model=load(open('./static/InfantHealthRiskModelSVM1.joblib', 'rb'))
 
 #Mapping the Risk
 Risk = {1:'Normal',2:'Moderate Risk',3:'High Risk'}
